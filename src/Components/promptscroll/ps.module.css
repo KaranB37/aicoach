@@ -43,9 +43,13 @@
   height: 76px;
   background: #1e264b;
   border-radius: 12px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
 }
 
-/* border: 1px solid #2F76FF; */
+.marq:hover {
+  border-color: #2f76ff;
+}
 
 .single {
   display: flex;
@@ -56,11 +60,16 @@
   margin-right: 28px;
 }
 
+.marq:hover .arrowcon {
+  transition: transform 0.3s ease;
+  transform: rotate(-30deg);
+}
 .arrowcon {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   height: 100%;
   margin-left: 12px;
+  transition: transform 0.3s ease;
   margin-bottom: 5px;
 }

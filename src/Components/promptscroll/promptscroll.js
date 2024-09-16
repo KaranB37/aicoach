@@ -26,7 +26,7 @@ export const Promptscroll = () => {
   return (
     <div className={styles.main}>
       <div className={styles.box}>
-        <h1>Explore AgentCoach.ai's Expertise</h1>
+        <h1>Explore AgentCoach.ai&apos;s Expertise</h1>
         <p>
           Scroll through example prompts to see how our AI delivers expert
           advice on <br />
