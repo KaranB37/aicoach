@@ -131,7 +131,7 @@
 }
 .link_a {
   padding: 0px 20px;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 18px;
   line-height: 24px;
   display: flex;
@@ -156,6 +156,7 @@
   position: relative;
   display: inline-block;
   color: #2f76ff;
+  font-weight: 500;
 }
 
 /* .active::after {
