@@ -2,19 +2,19 @@
 
 :root {
   --primary-background-color: #ffffff;
-  --primary-font-color: #ffffff; /* Updated to white */
-  --scroll-size: 5px;
+  --primary-font-color: #ffffff;
+  --scroll-size: 8px;
   --scroll-radius: 0px;
   --scroll-track: rgba(255, 255, 255, 0.1);
-  --scroll-thumb-color: rgba(0, 0, 0, 0.8);
-  --foreground-rgb: 255, 255, 255; /* Example value */
+  --scroll-thumb-color: rgba(39, 39, 39, 0.8);
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 24, 24, 27;
   --background-end-rgb: 17, 14, 7;
 }
 
 body {
   background-color: #000000;
-  color: var(--primary-font-color); /* Default font color set to white */
+  color: var(--primary-font-color);
 }
 
 @supports not (selector(::-webkit-scrollbar-thumb)) {

@@ -1,3 +1,5 @@
+import Cardsection from "@/Components/Cardsection/Cardsection";
+import Cards from "@/Components/Cardsection/Cardsection";
 import Footer from "@/Components/Footer/Footer";
 import Hero from "@/Components/Hero/Hero";
 import Layout from "@/Components/Layout/Layout";
@@ -8,6 +10,7 @@ export default function Home() {
     <Layout title={"Home"}>
       <Hero />
       <Promptscroll />
+      <Cardsection />
       <Footer />
     </Layout>
   );

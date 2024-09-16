@@ -48,6 +48,7 @@
 }
 
 .marq:hover {
+  cursor: pointer;
   border-color: #2f76ff;
 }
 
