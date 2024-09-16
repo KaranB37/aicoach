@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
-import { z } from "zod";
 import styles from "./footer.module.css";
 import { contacts, footLinks, footlink, navLinks } from "@/utils/Constants";
 import { FaLinkedin } from "react-icons/fa";
-import { IoLogoInstagram } from "react-icons/io";
-import { FaSquareBehance } from "react-icons/fa6";
 import Link from "next/link";
 import logo from "@/Assets/icons/logo.svg";
 import { FaTwitter } from "react-icons/fa";
