@@ -31,8 +31,6 @@ export default function Home() {
           title={
             <span>
               Experience AgentCoach in Action <br />
-              {/* See how AgentCoach enhances
-              your real estate journey with powerful AI-driven features. */}
             </span>
           }
           badge={<Badge className="h-10 w-10 transform -rotate-12" />}
