@@ -5,10 +5,11 @@ import Hero from "@/Components/Hero/Hero";
 import Layout from "@/Components/Layout/Layout";
 import Promptscroll from "@/Components/promptscroll/promptscroll";
 import { MacbookScroll } from "@/Components/ui/macbook-scroll";
-import bgvideo from "@/Assets/icons/video.png";
+import bgimage from "@/Assets/icons/video.png";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/Assets/icons/logo.svg";
+import video from "@/Assets/videos/AIchatbot.mp4";
 
 export default function Home() {
   // Peerlist logo
@@ -35,7 +36,9 @@ export default function Home() {
             </span>
           }
           badge={<Badge className="h-10 w-10 transform -rotate-12" />}
-          src={bgvideo}
+          src={video}
+          // videosrc={video}
+          // imgsrc={bgimage}
           showGradient={false}
         />
       </div>
