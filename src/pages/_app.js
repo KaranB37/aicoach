@@ -1,6 +1,7 @@
 import Mobilenavbar from "@/Components/Navbar/MobileNavbar";
 import Navbar from "@/Components/Navbar/Navbar";
 import "@/styles/globals.css";
+
 import { useState } from "react";
 
 export default function App({ Component, pageProps }) {
