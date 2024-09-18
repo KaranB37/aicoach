@@ -29,10 +29,10 @@ export const Hero = ({ video }) => {
 
   return (
     <div className={styles.main}>
-      <video className={styles.videoBackground} autoPlay loop muted playsInline>
+      {/* <video className={styles.videoBackground} autoPlay loop muted playsInline>
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       <div className={styles.content}>
         <Image src={home} className={styles.img} alt=" " />
         <div className={styles.overlay} alt=" " />

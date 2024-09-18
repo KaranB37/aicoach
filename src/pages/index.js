@@ -25,8 +25,8 @@ export default function Home() {
   return (
     <Layout title={"Home"}>
       <Hero video={video2} />
-      <Promptscroll />
       <Cardsection />
+      <Promptscroll />
       <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
         <MacbookScroll
           title={
