@@ -3,6 +3,8 @@ import styles from "./ps.module.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { qset1, qset2, qset3 } from "@/utils/Constants";
 import Marquee from "react-fast-marquee";
+import Image from "next/image";
+import arrow from "@/Assets/icons/rightarrow.svg";
 const MarqueeSection = ({ questions, direction }) => (
   <Marquee
     direction={direction}
@@ -26,6 +28,13 @@ export const Promptscroll = () => {
   return (
     <div className={styles.main}>
       <div className={styles.box}>
+        <button className={styles.trybtn}>
+          <div className={styles.con}>
+            <span className={styles.trytext}>TRY IT NOW!</span>
+            <Image src={arrow} className={styles.arr} alt=" " />
+          </div>
+        </button>
+
         <h1>Explore AgentCoach.ai&apos;s Expertise</h1>
         <p>
           Scroll through example prompts to see how our AI delivers expert

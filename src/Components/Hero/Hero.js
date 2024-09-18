@@ -4,6 +4,8 @@ import Image from "next/image";
 import home from "@/Assets/icons/House.svg";
 import overlay from "@/Assets/videos/overlay.mp4";
 import TextTransition, { presets } from "react-text-transition";
+import { motion } from "framer-motion";
+
 const TEXTS = [
   "Sales Advisor",
   "Negotiation Expert",
@@ -47,7 +49,19 @@ export const Hero = ({ video }) => {
         <div className={styles.rec1} />
       </div>
       <div className={styles.content}>
-        <Image src={home} className={styles.img} alt=" " />
+        <motion.div
+          className={styles.img}
+          animate={{
+            y: [0, -5, 0],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "mirror",
+          }}
+        >
+          <Image src={home} alt="Floating Image" />
+        </motion.div>
         <div className={styles.overlay} alt=" " />
         <h1>
           Get Expertise at Real Estate Business with <br />{" "}
