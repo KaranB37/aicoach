@@ -111,3 +111,38 @@ export const cardinfo = [
       "Get comprehensive advice on various aspects of real estate, from legalities to client management, tailored to your needs.",
   },
 ];
+
+//faq questions
+
+export const faqData = [
+  {
+    question: "How does Agent Coach.ai work?",
+    answer:
+      "Agent Coach.ai uses AI to provide expert advice on real estate topics by analyzing prompts and delivering insightful responses.",
+  },
+  {
+    question: "Can I track my progress?",
+    answer:
+      "Yes, the platform allows you to track your progress with metrics and analytics on the dashboard.",
+  },
+  {
+    question: "Do I need prior experience?",
+    answer:
+      "No prior experience is needed. Agent Coach.ai is designed to guide both beginners and professionals.",
+  },
+  {
+    question: "What areas does Coach.ai cover?",
+    answer:
+      "Agent Coach.ai covers various real estate topics, including market analysis, investment strategies, and legal considerations.",
+  },
+  {
+    question: "Is there a mobile version available?",
+    answer:
+      "Yes, Agent Coach.ai is available on mobile for both Android and iOS users.",
+  },
+  {
+    question: "What if I have more questions?",
+    answer:
+      "You can contact our support team anytime for additional questions or concerns.",
+  },
+];

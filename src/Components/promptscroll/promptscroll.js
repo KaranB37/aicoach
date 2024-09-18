@@ -30,7 +30,7 @@ export const Promptscroll = () => {
       <div className={styles.box}>
         <button className={styles.trybtn}>
           <div className={styles.con}>
-            <span className={styles.trytext}>TRY IT NOW!</span>
+            <span className={styles.trytext}>TRY IT NOW</span>
             <Image src={arrow} className={styles.arr} alt=" " />
           </div>
         </button>

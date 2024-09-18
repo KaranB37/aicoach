@@ -11,6 +11,7 @@ import Image from "next/image";
 import logo from "@/Assets/icons/logo.svg";
 import video from "@/Assets/videos/AIchatbot.mp4";
 import video2 from "@/Assets/videos/bgvideo.mp4";
+import Faq from "@/Components/FAQ/Faq";
 
 export default function Home() {
   // Peerlist logo
@@ -41,7 +42,7 @@ export default function Home() {
           showGradient={false}
         />
       </div>
-
+      <Faq />
       <Footer />
     </Layout>
   );
