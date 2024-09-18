@@ -1,20 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./hm.module.css";
 import Image from "next/image";
 import home from "@/Assets/icons/House.svg";
+import TextTransition, { presets } from "react-text-transition";
+const TEXTS = [
+  "Sales Advisor",
+  "Negotiation Expert",
+  "Marketing Guru",
+  "Motivation Guide",
+  "General Advisor",
+];
 export const Hero = ({ video }) => {
-  const Content = () => {
-    return (
-      <div className={styles.content}>
-        <Image src={home} className={styles.img} alt=" " />
-        <div className={styles.overlay} alt=" " />
-        <h1>
-          Get Expertise at Real Estate Business with <br />
-        </h1>
-        <p>This content is displayed above the background video.</p>
-      </div>
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000 // every 3 seconds
     );
-  };
+    return () => clearTimeout(intervalId);
+  }, []);
+
+  // const Content = () => {
+  //   return (
+
+  //   );
+  // };
 
   return (
     <div className={styles.main}>
@@ -22,7 +33,33 @@ export const Hero = ({ video }) => {
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <Content />
+      <div className={styles.content}>
+        <Image src={home} className={styles.img} alt=" " />
+        <div className={styles.overlay} alt=" " />
+        <h1>
+          Get Expertise at Real Estate Business with <br />{" "}
+          <div className={styles.below}>
+            <TextTransition
+              springConfig={presets.gentle}
+              style={{ margin: "0 0px" }}
+              inline
+              className={styles.text}
+            >
+              {TEXTS[index % TEXTS.length]}
+            </TextTransition>
+            AI Chatbots
+          </div>
+        </h1>
+        <p>
+          Streamline Your Real Estate Operations With Tailored Advice From
+          Specialized <span className={styles.bold}>AI Chatbots</span> Designed
+          For{" "}
+          <span className={styles.bold}>
+            Sales, Negotiation, Marketing, And More.
+          </span>
+        </p>
+        <button className={styles.gt}>GET STARTED</button>
+      </div>
     </div>
   );
 };
