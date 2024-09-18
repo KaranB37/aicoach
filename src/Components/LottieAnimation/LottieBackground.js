@@ -1,6 +1,6 @@
 // components/LottieBackground.js
 import React from "react";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import animationData from "@/Assets/videos/Flow2.json"; // Replace with your JSON file path
 
 const LottieBackground = ({ containerRef }) => {
@@ -13,26 +13,26 @@ const LottieBackground = ({ containerRef }) => {
   return (
     <div
       style={{
-        position: "absolute", // Ensure it covers the whole container
+        position: "absolute",
         top: 68,
         left: 0,
         width: "100%",
         height: "100%",
         overflow: "hidden",
-        pointerEvents: "none", // Make sure it's non-clickable
+        pointerEvents: "none",
       }}
     >
-      <Lottie
+      {/* <Lottie
         options={defaultOptions}
-        height="100%" // Ensures it covers the full height
-        width="100%" // Ensures it covers the full width
+        height="100%"
+        width="100%"
         style={{
           position: "absolute",
           top: 0,
           left: 0,
-          objectFit: "cover", // Ensures it covers the container fully
+          objectFit: "cover",
         }}
-      />
+      /> */}
     </div>
   );
 };

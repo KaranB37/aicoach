@@ -10,6 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/Assets/icons/logo.svg";
 import video from "@/Assets/videos/AIchatbot.mp4";
+import video2 from "@/Assets/videos/bgvideo.mp4";
 
 export default function Home() {
   // Peerlist logo
@@ -23,7 +24,7 @@ export default function Home() {
 
   return (
     <Layout title={"Home"}>
-      <Hero />
+      <Hero video={video2} />
       <Promptscroll />
       <Cardsection />
       <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
@@ -40,7 +41,6 @@ export default function Home() {
           showGradient={false}
         />
       </div>
-
       <Footer />
     </Layout>
   );

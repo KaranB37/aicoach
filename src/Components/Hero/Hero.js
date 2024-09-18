@@ -1,46 +1,27 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import styles from "./hm.module.css";
-import LottieBackground from "../LottieAnimation/LottieBackground";
-
-export const Hero = () => {
-  const containerRef = useRef(null);
-  const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
+import Image from "next/image";
+import home from "@/Assets/icons/House.svg";
+export const Hero = ({ video }) => {
   const Content = () => {
     return (
-      <div
-        style={{
-          position: "relative",
-          zIndex: 1,
-          padding: "20px",
-          color: "white",
-        }}
-      >
-        {/* <h1>Your Content Here</h1>
-        <p>This content is displayed above the Lottie background.</p> */}
+      <div className={styles.content}>
+        <Image src={home} className={styles.img} alt=" " />
+        <div className={styles.overlay} alt=" " />
+        <h1>
+          Get Expertise at Real Estate Business with <br />
+        </h1>
+        <p>This content is displayed above the background video.</p>
       </div>
     );
   };
 
-  useEffect(() => {
-    const updateSize = () => {
-      if (containerRef.current) {
-        setContainerSize({
-          width: containerRef.current.clientWidth,
-          height: containerRef.current.clientHeight,
-        });
-      }
-    };
-
-    window.addEventListener("resize", updateSize);
-    updateSize(); // Initial size update
-
-    return () => {
-      window.removeEventListener("resize", updateSize);
-    };
-  }, []);
   return (
-    <div className={styles.main} ref={containerRef}>
-      <LottieBackground containerRef={containerRef} />
+    <div className={styles.main}>
+      <video className={styles.videoBackground} autoPlay loop muted playsInline>
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <Content />
     </div>
   );
