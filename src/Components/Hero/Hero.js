@@ -58,7 +58,9 @@ export const Hero = ({ video }) => {
             Sales, Negotiation, Marketing, And More.
           </span>
         </p>
-        <button className={styles.gt}>GET STARTED</button>
+        <button className={styles.gt}>
+          <span className={styles.btntext}>GET STARTED</span>
+        </button>
       </div>
     </div>
   );
