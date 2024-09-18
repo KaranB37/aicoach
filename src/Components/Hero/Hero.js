@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./hm.module.css";
 import Image from "next/image";
 import home from "@/Assets/icons/House.svg";
+import overlay from "@/Assets/videos/overlay.mp4";
 import TextTransition, { presets } from "react-text-transition";
 const TEXTS = [
   "Sales Advisor",
@@ -29,10 +30,22 @@ export const Hero = ({ video }) => {
 
   return (
     <div className={styles.main}>
-      {/* <video className={styles.videoBackground} autoPlay loop muted playsInline>
-        <source src={video} type="video/mp4" />
+      {/* <video className={styles.ol2} autoPlay loop muted playsInline>
+        <source src={overlay} type="video/mp4" />
         Your browser does not support the video tag.
       </video> */}
+      <div className={styles.videoBackground}>
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+      </div>
       <div className={styles.content}>
         <Image src={home} className={styles.img} alt=" " />
         <div className={styles.overlay} alt=" " />
