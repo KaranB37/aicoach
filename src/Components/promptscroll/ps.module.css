@@ -68,10 +68,14 @@
 }
 .arrowcon {
   display: flex;
+  align-items: flex-end;
   height: 100%;
   margin-left: 12px;
   transition: transform 0.3s ease;
   margin-bottom: 5px;
+}
+.trybtn:hover .arrowcon {
+  transform: rotate(-30deg);
 }
 
 .trytext {
@@ -107,10 +111,15 @@
   overflow: hidden;
   z-index: 1;
   border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.trybtn:hover:after {
+  background-color: #ffffff;
+}
 .trybtn:before,
 .trybtn-glow:before {
+  opacity: 1;
   content: "";
   z-index: -2;
   position: absolute;
@@ -127,6 +136,7 @@
     rgba(0, 0, 0, 0) 25%
   );
   animation: rotate 4s linear infinite;
+  transition: opacity 0.3s ease;
 }
 
 .trybtn:after {
@@ -139,6 +149,7 @@
   height: calc(100% - 5px);
   background: #1e2a5e;
   border-radius: 50px;
+  transition: background-color 0.3s ease;
 }
 
 .trybtn-glow {
@@ -150,9 +161,14 @@
   filter: blur(10px);
   z-index: 0;
 }
+.trybtn:hover:before,
+.trybtn:hover .trybtn-glow:before {
+  opacity: 0; /* Hide glow effect and pseudo-element on hover */
+}
 
 .con {
-  gap: 15px;
+  gap: 0px;
+  align-items: center;
   display: flex;
   width: 100%;
   position: relative;

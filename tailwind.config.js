@@ -15,7 +15,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        "custom-dark": "rgba(15, 16, 35, 0.8)",
+      },
+    },
   },
   plugins: [addVariablesForColors],
 };

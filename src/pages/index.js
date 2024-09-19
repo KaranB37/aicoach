@@ -28,7 +28,7 @@ export default function Home() {
       <Hero video={video2} />
       <Cardsection />
       <Promptscroll />
-      <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
+      <div className="overflow-hidden  ">
         <MacbookScroll
           title={
             <span>
