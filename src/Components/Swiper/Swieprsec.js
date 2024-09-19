@@ -22,8 +22,8 @@ const Swieprsec = () => {
       </div>
       <div className={styles.swipercon}>
         <Swiper
-          slidesPerView={3}
-          spaceBetween={100}
+          slidesPerView={1} // Default slides per view
+          spaceBetween={20} // Adjust spacing between slides
           centeredSlides={true}
           loop={true}
           autoplay={{
@@ -34,9 +34,11 @@ const Swieprsec = () => {
           breakpoints={{
             640: {
               slidesPerView: 2,
+              spaceBetween: 30, // Adjust space between slides for medium screens
             },
             1024: {
               slidesPerView: 3,
+              spaceBetween: 40, // Adjust space between slides for larger screens
             },
           }}
           className="mySwiper"

@@ -15,8 +15,7 @@ const Cardsection = () => {
         <h1>Explore AI Chatbots</h1>
         <p>
           Engage with our AI chatbots to receive expert guidance tailored to
-          your
-          <br /> needs in Sales, Negotiation, Marketing, and more.
+          your needs in Sales, Negotiation, Marketing, and more.
         </p>
       </div>
       <div className={styles.cardcon}>

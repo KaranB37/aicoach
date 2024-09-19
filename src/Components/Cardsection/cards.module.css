@@ -164,3 +164,51 @@ border: 1.8px solid #2F76FF; */
   align-items: center;
   width: 100vw;
 }
+
+@media (max-width: 768px) {
+  .box > h1 {
+    font-size: 30px;
+  }
+  .box > p {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+  .cardcon {
+    margin-top: 40px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .up {
+    gap: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+  .below {
+    gap: 30px;
+
+    flex-direction: column;
+  }
+  .glow {
+    opacity: 1;
+    transform: scale(1);
+    width: 52px;
+    height: 52px;
+  }
+
+  .arrow {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+  }
+  .card {
+    border-top: 2.7px solid #2f76ff;
+    border-left: 1.8px solid #2f76ff;
+    border-right: 1.8px solid #2f76ff;
+    border-bottom: 1.8px solid #2f76ff;
+  }
+}

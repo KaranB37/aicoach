@@ -20,22 +20,22 @@ const Mobilenavbar = (props) => {
         </li>
         <li>
           <Link href="/#about">
-            <span onClick={closefn}>ABOUT US</span>
+            <span onClick={closefn}>ABOUT</span>
           </Link>
         </li>
         <li>
           <Link href="/#services">
-            <span onClick={closefn}>SERVICES</span>
+            <span onClick={closefn}>PRICING</span>
           </Link>
         </li>
         <li>
           <Link href="/#projects">
-            <span onClick={closefn}>PROJECTS</span>
+            <span onClick={closefn}>FAQ'S</span>
           </Link>
         </li>
         <li>
           <Link href="/#contact">
-            <span onClick={closefn}>CONTACT</span>
+            <span onClick={closefn}>BLOGS</span>
           </Link>
         </li>
       </ul>

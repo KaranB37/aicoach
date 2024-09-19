@@ -180,3 +180,29 @@
     transform: translate(-50%, -50%) rotate(1turn);
   }
 }
+
+@media (max-width: 768px) {
+  .box > h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .box > p {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+  .single {
+    gap: 10px;
+  }
+  .marq:last-child {
+    margin-right: 10px;
+  }
+  .marq {
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    padding: 16px 24px;
+    gap: 4px;
+    height: 80px;
+  }
+}

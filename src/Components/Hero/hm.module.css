@@ -186,3 +186,39 @@
 .gt:hover .btntext {
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .main {
+    height: 100vh;
+  }
+  .img {
+    margin-top: -150px;
+
+    width: 350px;
+  }
+  .content p {
+    width: 80%;
+    font-size: 14px;
+  }
+  .content h1 {
+    margin-top: 15px;
+    width: 90%;
+    font-size: 24px;
+  }
+  .text {
+    font-weight: 500;
+    font-size: 26px;
+    overflow: visible;
+    line-height: 65px;
+    color: #ffffff;
+  }
+  .below {
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* height: 30px; */
+    /* overflow: hidden; */
+    flex-direction: row;
+  }
+}

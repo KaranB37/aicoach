@@ -80,8 +80,7 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
       >
         {title || (
           <span>
-            Experience AgentCoach in Action <br /> See how AgentCoach enhances
-            your real estate journey with powerful AI-driven features.
+            Experience AgentCoach in Action <br />
           </span>
         )}
 
@@ -98,8 +97,8 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
             paddingTop: "20px",
           }}
         >
-          See how AgentCoach enhances your real estate journey with powerful
-          AI-driven features.
+          Unlock expert AI-driven advice for real estate, sales, and
+          negotiation. Get started for free and elevate your career today!
         </motion.p>
       </motion.h2>
       {/* Lid */}

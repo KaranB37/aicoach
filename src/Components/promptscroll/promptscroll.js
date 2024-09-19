@@ -36,12 +36,10 @@ export const Promptscroll = () => {
             </div>
           </div>
         </button>
-
         <h1>Explore AgentCoach.ai&apos;s Expertise</h1>
         <p>
           Scroll through example prompts to see how our AI delivers expert
-          advice on <br />
-          real estate topics.
+          advice on real estate topics.
         </p>
       </div>
       <div className={styles.marqcon}>

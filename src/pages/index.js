@@ -34,7 +34,8 @@ export default function Home() {
         <MacbookScroll
           title={
             <span>
-              Experience AgentCoach in Action <br />
+              Start Transforming Your Real Estate Career Today - For Free!{" "}
+              <br />
             </span>
           }
           badge={<Badge className="h-10 w-10 transform -rotate-12" />}
