@@ -42,11 +42,12 @@ const Footer = () => {
         <div className={styles.footer}>
           <div className={styles.newsletter}>
             <div className={styles.upp}>
-              <Image src={logo} className={styles.footlogo} alt=" " />
+              <div className={styles.center}>
+                <Image src={logo} className={styles.footlogo} alt=" " />
+              </div>
               <p>
-                Discover an Al platform tailored for getting
-                <br />
-                expertise in your Real Estate Business
+                Discover an Al platform tailored for getting expertise in your
+                Real Estate Business
               </p>
             </div>
             <p>&#169; 2024 Agentcoach.ai. All rights reserved.</p>

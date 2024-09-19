@@ -42,10 +42,10 @@
 }
 
 .footer {
-  height: 100%;
+  /* height: 100%; */
   /* padding: 56.8667px 0px 42.65px; */
   /* height: 293px; */
-  padding: 55px 72px 50px 72px;
+  padding: 40px 72px 50px 72px;
   background: linear-gradient(293.27deg, #000362 0.61%, #07323f 99.39%), #19355d;
 }
 
@@ -60,29 +60,30 @@
 } */
 
 .iconcon {
+  padding-top: 30px;
   display: flex;
   flex-direction: column-reverse;
 }
 .upp > p {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 21px;
   color: #ecf2ff;
+  padding-bottom: 10px;
 }
 .newsletter > p {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 21px;
   color: #ecf2ff;
 }
 .foot_below {
-  width: 55%;
-  padding-left: 40px;
+  width: 100%;
+  padding-left: 0px;
   margin-top: 40px;
   display: flex;
-
   /* padding: 0 20px; */
   justify-content: space-between;
 }
@@ -94,6 +95,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  /* padding-bottom: 14px; */
 }
 .navlink2 {
   color: #d1e1ff;
@@ -103,8 +105,8 @@
   flex-direction: column;
 }
 .footlink {
+  padding-bottom: 14px;
   display: flex;
-
   justify-content: space-evenly;
   font-weight: 400;
   font-size: 14px;
@@ -126,7 +128,7 @@
   gap: 15px;
 }
 .display {
-  display: none;
+  display: flex;
 }
 
 .icon:hover {
@@ -134,11 +136,32 @@
 }
 
 .footlogo {
-  width: 160.98px;
-  height: 40px;
+  width: 300.98px;
+  height: 70px;
   margin-bottom: 28px;
 }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media only screen and (min-width: 768px) {
+  .iconcon {
+    padding-top: 0px;
+  }
+  .footlink {
+    padding-bottom: 0px;
+  }
+  .footlogo {
+    width: 160.98px;
+    height: 40px;
+    margin-bottom: 28px;
+  }
+  .main {
+    height: auto;
+    /* padding-top: 100px; */
+  }
   .foot_img {
     width: 100%;
     height: 560px;
@@ -162,6 +185,7 @@
   }
 
   .foot_below {
+    width: 55%;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
@@ -172,5 +196,22 @@
   }
   .display {
     display: flex;
+  }
+  .footer {
+    padding: 55px 72px 50px 72px;
+  }
+  .upp > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ecf2ff;
+  }
+  .newsletter > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ecf2ff;
   }
 }
