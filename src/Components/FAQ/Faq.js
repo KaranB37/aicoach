@@ -42,10 +42,14 @@ const Faq = () => {
                 activeIndex === index ? styles.visible : ""
               }`}
               style={{
+                height:
+                  activeIndex === index
+                    ? (answerRef.current[index]?.scrollHeight || 0) + 40
+                    : 0,
                 opacity: activeIndex === index ? 1 : 0,
               }}
             >
-              <span className={styles.texta}>{item.answer}</span>
+              {item.answer}
             </div>
           </div>
         ))}
