@@ -62,9 +62,11 @@ export const Hero = ({ video }) => {
         >
           <Image src={home} alt="Floating Image" />
         </motion.div>
+        <p>Introducing AI-Powered Coaching for Real Estate Agents </p>
         <div className={styles.overlay} alt=" " />
         <h1>
-          Get Expertise at Real Estate Business with <br />{" "}
+          Accelerate Your Real Estate Career With Cutting-Edge Generative
+          <br />{" "}
           <div className={styles.below}>
             <TextTransition
               springConfig={presets.gentle}
@@ -74,17 +76,17 @@ export const Hero = ({ video }) => {
             >
               {TEXTS[index % TEXTS.length]}
             </TextTransition>
-            AI Chatbots
+            AI Coaching
           </div>
         </h1>
-        <p>
+        {/* <p>
           Streamline Your Real Estate Operations With Tailored Advice From
           Specialized <span className={styles.bold}>AI Chatbots</span> Designed
           For{" "}
           <span className={styles.bold}>
             Sales, Negotiation, Marketing, And More.
           </span>
-        </p>
+        </p> */}
         <button className={styles.gt}>
           <span className={styles.btntext}>GET STARTED</span>
         </button>

@@ -12,6 +12,7 @@ import logo from "@/Assets/icons/logo.svg";
 import video from "@/Assets/videos/AIchatbot.mp4";
 import video2 from "@/Assets/videos/bgvideo.mp4";
 import Faq from "@/Components/FAQ/Faq";
+import Swieprsec from "@/Components/Swiper/Swieprsec";
 
 export default function Home() {
   // Peerlist logo
@@ -28,6 +29,7 @@ export default function Home() {
       <Hero video={video2} />
       <Cardsection />
       <Promptscroll />
+      <Swieprsec />
       <div className="overflow-hidden  ">
         <MacbookScroll
           title={

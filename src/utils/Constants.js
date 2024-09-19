@@ -146,3 +146,62 @@ export const faqData = [
       "You can contact our support team anytime for additional questions or concerns.",
   },
 ];
+
+import pp from "@/Assets/icons/cardpp.svg";
+import icon12 from "@/Assets/icons/icon12.svg";
+export const testimonials = [
+  {
+    id: 1,
+    image: pp, // Import path for the image
+    icon: icon12, // Import path for the icon
+    text:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    name: "Jan Stiedemann",
+    position: "Global Applications Representative",
+  },
+  {
+    id: 2,
+    image: pp, // Example image
+    icon: icon12, // Example icon
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula tempus nisi non fringilla.",
+    name: "John Doe",
+    position: "Real Estate Agent",
+  },
+  {
+    id: 3,
+    image: pp, // Example image
+    icon: icon12, // Example icon
+    text:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    name: "Jane Smith",
+    position: "Property Consultant",
+  },
+  {
+    id: 4,
+    image: pp, // Example image
+    icon: icon12, // Example icon
+    text:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    name: "Jane Smith",
+    position: "Property Consultant",
+  },
+  {
+    id: 5,
+    image: pp, // Example image
+    icon: icon12, // Example icon
+    text:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    name: "Jane Smith",
+    position: "Property Consultant",
+  },
+  {
+    id: 6,
+    image: pp, // Example image
+    icon: icon12, // Example icon
+    text:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    name: "Jane Smith",
+    position: "Property Consultant",
+  },
+];
