@@ -5,6 +5,7 @@ import home from "@/Assets/icons/House.svg";
 import overlay from "@/Assets/videos/overlay.mp4";
 import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
+import overlayvideo from "@/Assets/videos/overlay.mp4";
 
 const TEXTS = [
   "Sales Advisor",
@@ -36,7 +37,29 @@ export const Hero = ({ video }) => {
         <source src={overlay} type="video/mp4" />
         Your browser does not support the video tag.
       </video> */}
+      {/* <div className={styles.videoBackground}>
+        <video className={styles.overlayvideo} autoplay muted loop>
+          <source src="path-to-your-video.mp4" type="video/mp4" />
+        </video>
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+        <div className={styles.rec1} />
+      </div> */}
+
       <div className={styles.videoBackground}>
+        <video className={styles.overlayvideo} autoPlay muted loop>
+          <source src={overlayvideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div className={styles.rectangles}>
         <div className={styles.rec1} />
         <div className={styles.rec1} />
         <div className={styles.rec1} />

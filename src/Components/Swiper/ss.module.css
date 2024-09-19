@@ -43,6 +43,7 @@
   background: linear-gradient(337.76deg, #000362 14.51%, #07323f 85.49%);
   box-shadow: 15px 10.5px 30px rgba(0, 0, 0, 0.08);
   border-radius: 24px;
+  transition: all 0.3s ease;
 }
 
 .pptext {
@@ -96,11 +97,26 @@
   padding-top: 50px;
 }
 
+.mySwiper {
+  overflow: visible;
+}
+
+.swiper-slide {
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.swiper-slide-active {
+  z-index: 100;
+}
 .swipercon {
+  position: relative;
+  overflow: visible;
   width: 100%;
   height: auto;
   padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px 140px;
 }

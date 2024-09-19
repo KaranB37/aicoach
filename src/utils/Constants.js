@@ -1,8 +1,8 @@
 export const navLinks = [
   { id: "home", label: "Home", href: "/" },
   { id: "about", label: "About", href: "/#about" },
-  { id: "projects", label: "AI Products", href: "/#projects" },
   { id: "services", label: "Pricing", href: "/#services" },
+  { id: "projects", label: "FAQ's", href: "/#projects" },
   { id: "contact", label: "Blogs", href: "/#contact" },
 ];
 export const footLinks = [

@@ -74,7 +74,7 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
           fontSize: "34px",
           lineHeight: "42px",
           color: "#ffffff",
-          paddingBottom: "10px", // Using marginBottom instead of paddingBottom for the spacing
+          paddingBottom: "10px",
         }}
         className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center"
       >

@@ -23,45 +23,64 @@ const Swieprsec = () => {
       <div className={styles.swipercon}>
         <Swiper
           slidesPerView={3}
-          spaceBetween={30}
+          spaceBetween={100}
           centeredSlides={true}
-          pagination={{ clickable: false }}
           loop={true}
           autoplay={{
             delay: 2500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
           }}
-          modules={[Pagination, Autoplay]}
-          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+          modules={[Autoplay]}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
           className="mySwiper"
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div
-                className={`${styles.singlecard} ${
-                  index === activeIndex ? styles.activeSlide : ""
-                }`}
-              >
-                <div className={styles.imgcon}>
-                  <Image
-                    src={testimonial.image}
-                    className={styles.pp}
-                    alt="Profile picture"
-                  />
-                  <Image
-                    src={testimonial.icon}
-                    className={styles.icon}
-                    alt="Icon"
-                  />
+              {({ isActive }) => (
+                <div
+                  style={{
+                    height: "360px",
+                  }}
+                  className={`flex flex-col items-center justify-center p-8 rounded-3xl bg-gradient-to-br from-[#000362] to-[#07323f] shadow-lg transition-all duration-300 ${
+                    isActive ? "scale-[1.00] " : "scale-100 opacity-70"
+                  }`}
+                >
+                  <div className="relative mb-6">
+                    <Image
+                      src={testimonial.image}
+                      alt="Profile picture"
+                      width={129}
+                      height={129}
+                      className="rounded-full"
+                    />
+                    <Image
+                      src={testimonial.icon}
+                      alt="Icon"
+                      width={51}
+                      height={51}
+                      className="absolute bottom-0 right-0"
+                    />
+                  </div>
+                  <p className="text-white text-sm mb-4 text-center">
+                    {testimonial.text}
+                  </p>
+                  <div className="text-center">
+                    <h3 className="text-[#2f76ff] font-bold text-lg">
+                      {testimonial.name}
+                    </h3>
+                    <p className="text-[#adadad] text-sm">
+                      {testimonial.position}
+                    </p>
+                  </div>
                 </div>
-                <span className={styles.pptext}>{testimonial.text}</span>
-                <div className={styles.detcon}>
-                  <span className={styles.name}>{testimonial.name}</span>
-                  <span className={styles.position}>
-                    {testimonial.position}
-                  </span>
-                </div>
-              </div>
+              )}
             </SwiperSlide>
           ))}
         </Swiper>
