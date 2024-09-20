@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./hm.module.css";
 import Image from "next/image";
-import home from "@/Assets/icons/House.svg";
+import home from "@/Assets/icons/House.png";
 import overlay from "@/Assets/videos/overlay.mp4";
 import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
