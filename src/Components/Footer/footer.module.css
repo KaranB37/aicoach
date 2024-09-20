@@ -147,6 +147,11 @@
   justify-content: center;
 }
 @media only screen and (min-width: 768px) {
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
   .iconcon {
     padding-top: 0px;
   }
