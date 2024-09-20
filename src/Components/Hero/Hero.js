@@ -6,6 +6,7 @@ import overlay from "@/Assets/videos/overlay.mp4";
 import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
 import overlayvideo from "@/Assets/videos/overlay.mp4";
+import { useRouter } from "next/router"; // assuming you use Next.js
 
 const TEXTS = [
   "Sales Advisor",
@@ -15,6 +16,7 @@ const TEXTS = [
   "General Advisor",
 ];
 export const Hero = ({ video }) => {
+  const router = useRouter();
   const [index, setIndex] = React.useState(0);
 
   React.useEffect(() => {
@@ -111,7 +113,14 @@ export const Hero = ({ video }) => {
           </span>
         </p> */}
         <button className={styles.gt}>
-          <span className={styles.btntext}>GET STARTED</span>
+          <span
+            className={styles.btntext}
+            onClick={() =>
+              router.push("https://blessed-perch-83.accounts.dev/sign-in")
+            }
+          >
+            GET STARTED
+          </span>
         </button>
       </div>
     </div>
