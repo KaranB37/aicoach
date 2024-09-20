@@ -64,7 +64,17 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
     <div
       ref={ref}
       style={{ background: "rgba(15, 16, 35, 0.8)" }}
-      className="min-h-[200vh]  flex flex-col items-center py-0 md:py-20 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="
+      min-h-[200vh] 
+      flex flex-col items-center py-0 
+      md:py-20 
+      justify-start 
+      [perspective:800px] 
+      scale-[0.35] 
+      sm:scale-50 
+      md:scale-75 
+      lg:scale-90 
+      xl:scale-100"
     >
       <motion.h2
         style={{

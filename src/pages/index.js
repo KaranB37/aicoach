@@ -30,7 +30,7 @@ export default function Home() {
       <Cardsection />
       <Promptscroll />
       <Swieprsec />
-      <div className="overflow-hidden  ">
+      {/* <div className="overflow-hidden">
         <MacbookScroll
           title={
             <span>
@@ -44,7 +44,7 @@ export default function Home() {
           // imgsrc={bgimage}
           showGradient={false}
         />
-      </div>
+      </div> */}
       <Faq />
       <Footer />
     </Layout>
