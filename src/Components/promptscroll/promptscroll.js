@@ -4,6 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { qset1, qset2, qset3 } from "@/utils/Constants";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import arrow from "@/Assets/icons/rightarrow.svg";
 const MarqueeSection = ({ questions, direction }) => (
   <Marquee
@@ -25,12 +26,21 @@ const MarqueeSection = ({ questions, direction }) => (
   </Marquee>
 );
 export const Promptscroll = () => {
+  const router = useRouter();
+
   return (
     <div className={styles.main}>
       <div className={styles.box}>
         <button className={styles.trybtn}>
           <div className={styles.con}>
-            <span className={styles.trytext}>TRY IT NOW</span>
+            <span
+              className={styles.trytext}
+              onClick={() =>
+                router.push("https://blessed-perch-83.accounts.dev/sign-in")
+              }
+            >
+              TRY IT NOW
+            </span>
             <div className={styles.arrowcon}>
               <Image src={arrow} className={styles.arr} alt=" " />
             </div>

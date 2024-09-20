@@ -6,7 +6,7 @@ import overlay from "@/Assets/videos/overlay.mp4";
 import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
 import overlayvideo from "@/Assets/videos/overlay.mp4";
-import { useRouter } from "next/router"; // assuming you use Next.js
+import { useRouter } from "next/router";
 
 const TEXTS = [
   "Sales Advisor",

@@ -1,8 +1,11 @@
+// components/Cardsection.tsx
 import React from "react";
 import styles from "./cards.module.css";
 import Image from "next/image";
 import { cardinfo } from "@/utils/Constants";
 import arrow from "@/Assets/icons/glowarrow.svg";
+import Link from "next/link";
+
 const Cardsection = () => {
   const splitIndex = 3; // Number of items to display in the first section
 
@@ -21,26 +24,36 @@ const Cardsection = () => {
       <div className={styles.cardcon}>
         <div className={styles.up}>
           {firstPart.map((e, index) => (
-            <div className={styles.card} key={index}>
-              <Image src={e.img} className={styles.cardimg} alt=" " />
-              <span className={styles.cardh1}>{e.title}</span>
-              <span className={styles.cardp}>{e.description}</span>
-              <div className={styles.glow}>
-                <Image src={arrow} className={styles.arrow} alt=" " />
+            <Link
+              href={`http://localhost:3001?expertType=${e.key}`}
+              key={index}
+            >
+              <div className={styles.card}>
+                <Image src={e.img} className={styles.cardimg} alt={e.title} />
+                <span className={styles.cardh1}>{e.title}</span>
+                <span className={styles.cardp}>{e.description}</span>
+                <div className={styles.glow}>
+                  <Image src={arrow} className={styles.arrow} alt="Arrow" />
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className={styles.below}>
           {secondPart.map((e, index) => (
-            <div className={styles.card} key={index}>
-              <Image src={e.img} className={styles.cardimg} alt=" " />
-              <span className={styles.cardh1}>{e.title}</span>
-              <span className={styles.cardp}>{e.description}</span>
-              <div className={styles.glow}>
-                <Image src={arrow} className={styles.arrow} alt=" " />
+            <Link
+              href={`http://localhost:3001?expertType=${e.key}`}
+              key={index}
+            >
+              <div className={styles.card}>
+                <Image src={e.img} className={styles.cardimg} alt={e.title} />
+                <span className={styles.cardh1}>{e.title}</span>
+                <span className={styles.cardp}>{e.description}</span>
+                <div className={styles.glow}>
+                  <Image src={arrow} className={styles.arrow} alt="Arrow" />
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

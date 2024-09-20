@@ -6,8 +6,11 @@ import Image from "next/image";
 import styles from "./navbar.module.css";
 import newlogo from "@/Assets/icons/logo.svg";
 import { navLinks } from "@/utils/Constants";
+import { useRouter } from "next/router";
 
 const Navbar = ({ mobNav, setmobNav }) => {
+  const router = useRouter();
+
   const [activeLink, setActiveLink] = useState("home");
 
   useEffect(() => {
@@ -71,8 +74,22 @@ const Navbar = ({ mobNav, setmobNav }) => {
           ))}
           <li>
             <div className={styles.btncon}>
-              <button className={styles.login}>Log In</button>
-              <button className={styles.signup}>Sign Up</button>
+              <button
+                className={styles.login}
+                onClick={() =>
+                  router.push("https://blessed-perch-83.accounts.dev/sign-in")
+                }
+              >
+                Log In
+              </button>
+              <button
+                className={styles.signup}
+                onClick={() =>
+                  router.push("https://blessed-perch-83.accounts.dev/sign-in")
+                }
+              >
+                Sign Up
+              </button>
             </div>
           </li>
         </ul>

@@ -83,30 +83,35 @@ export const cardinfo = [
   {
     img: cardimg2,
     title: "Sales Advisor",
+    key: "Sales",
     description:
       "Boost your property sales with expert tips and proven strategies tailored for real estate professionals.",
   },
   {
     img: cardimg1,
     title: "Negotiation Expert",
+    key: "Negotiation",
     description:
       "Master the art of negotiation with advice on closing deals, overcoming objections, and maximizing value.",
   },
   {
     img: cardimg3,
     title: "Marketing Guru",
+    key: "Marketing",
     description:
       "Elevate your marketing game with creative campaigns, branding insights, and social media strategies that attract clients.",
   },
   {
     img: cardimg4,
     title: "Motivation Guide",
+    key: "Motivation",
     description:
       "Stay inspired and focused with personalized tips, affirmations, and goal-setting strategies from the Motivation Mentor bot.",
   },
   {
     img: cardimg5,
     title: "General Advisor",
+    key: "General",
     description:
       "Get comprehensive advice on various aspects of real estate, from legalities to client management, tailored to your needs.",
   },
