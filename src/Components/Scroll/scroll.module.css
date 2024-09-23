@@ -1,0 +1,111 @@
+.main {
+  /* min-height: 100vh; */
+  height: auto;
+  width: 100%;
+  background: rgba(15, 16, 35, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+.box {
+  padding: 0px 20px;
+}
+.box > h1 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.box > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #8c8c8c;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px 100px 0px 100px;
+  display: flex;
+  overflow: hidden;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  overflow: hidden;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  /* padding: 9px; */
+  gap: 9px;
+  height: 500px;
+  border: 0.6px solid #2f76ff;
+  box-shadow: 0px 2.91667px 6.35833px 9.91666px rgba(0, 3, 98, 0.29);
+  border-radius: 14px;
+}
+
+.scrollingText {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.container:hover .scrollingText {
+  opacity: 1;
+}
+
+.video {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .right {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* padding: 9px; */
+    gap: 9px;
+    height: 500px;
+    border: 0.6px solid #2f76ff;
+    box-shadow: 0px 2.91667px 6.35833px 9.91666px rgba(0, 3, 98, 0.29);
+    border-radius: 14px;
+  }
+  .container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 0px 30px;
+    display: flex;
+    overflow: hidden;
+  }
+  .main {
+    height: auto;
+    width: 100%;
+    background: rgba(15, 16, 35, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}

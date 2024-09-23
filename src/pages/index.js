@@ -13,6 +13,8 @@ import video from "@/Assets/videos/AIchatbot.mp4";
 import video2 from "@/Assets/videos/bgvideo.mp4";
 import Faq from "@/Components/FAQ/Faq";
 import Swieprsec from "@/Components/Swiper/Swieprsec";
+import Scroll from "@/Components/Scroll/Scroll";
+// import Try from "@/Components/Try/Try";
 
 export default function Home() {
   // Peerlist logo
@@ -30,6 +32,7 @@ export default function Home() {
       <Cardsection />
       <Promptscroll />
       <Swieprsec />
+      <Scroll />
       {/* <div className="overflow-hidden">
         <MacbookScroll
           title={
