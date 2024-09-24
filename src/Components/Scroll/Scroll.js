@@ -50,12 +50,12 @@
 // };
 
 // export default Scroll;
-
 import React, { useEffect } from "react";
 import styles from "./scroll.module.css";
 import video from "@/Assets/videos/AIchatbot.mp4";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 

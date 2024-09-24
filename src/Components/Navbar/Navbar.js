@@ -10,7 +10,6 @@ import { useRouter } from "next/router";
 
 const Navbar = ({ mobNav, setmobNav }) => {
   const router = useRouter();
-
   const [activeLink, setActiveLink] = useState("home");
 
   useEffect(() => {
