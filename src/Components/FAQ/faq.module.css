@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
   padding-bottom: 110px;
 }
 .box {

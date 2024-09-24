@@ -35,7 +35,7 @@ const Mobilenavbar = (props) => {
         </li>
         <li>
           <Link href="/#contact">
-            <span onClick={closefn}>BLOGS</span>
+            <span onClick={closefn}>BLOG</span>
           </Link>
         </li>
       </ul>

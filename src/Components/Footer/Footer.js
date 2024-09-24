@@ -40,19 +40,21 @@ const Footer = () => {
           <Image src={footerimg} alt="img" className={styles.fimg} />
         </div> */}
         <div className={styles.footer}>
-          <div className={styles.newsletter}>
+          <div className={styles.center}>
             {/* <div className={styles.upp}>
               <div className={styles.center}> */}
             <Image src={logo} className={styles.footlogo} alt=" " />
           </div>
-          <div className={styles.right}>
-            <p>
-              Discover an Al platform tailored for getting expertise in your
-              Real Estate Business
-            </p>
-            {/* </div> */}
-            <p>&#169; 2024 Agentcoach.ai. All rights reserved.</p>
-          </div>
+          {/* <div className={styles.right}> */}
+          <p style={{ textAlign: "center" }} className={styles.center}>
+            Discover an Al platform tailored for getting expertise in your Real
+            Estate Business.
+          </p>
+          {/* </div> */}
+          <p className={styles.center}>
+            &#169; 2024 Agentcoach.ai. All rights reserved.
+          </p>
+          {/* </div> */}
           {/* <form onSubmit={handleSubscribe}>
               <input
                 type="text"

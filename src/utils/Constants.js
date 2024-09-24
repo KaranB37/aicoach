@@ -2,8 +2,12 @@ export const navLinks = [
   { id: "home", label: "Home", href: "/" },
   { id: "about", label: "About", href: "/#about" },
   { id: "services", label: "Pricing", href: "/#services" },
-  { id: "projects", label: "FAQ ", href: "/#faq" },
-  { id: "contact", label: "Blog", href: "/#blog" },
+  { id: "projects", label: "FAQ's ", href: "/faqs" },
+  {
+    id: "contact",
+    label: "Blog",
+    href: "https://agentcoachblogteamlumio.wordpress.com/ ",
+  },
 ];
 export const footLinks = [
   { id: "product", label: "Product", href: "/" },
@@ -161,7 +165,7 @@ export const testimonials = [
     image: pp,
     icon: icon12,
     text:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      '"Agent Coach.ai has revolutionized my approach to negotiations. I feel more confident than ever!"',
     name: "Jan Stiedemann",
     position: "Global Applications Representative",
   },
@@ -170,8 +174,8 @@ export const testimonials = [
     image: pp,
     icon: icon12,
     text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula tempus nisi non fringilla.",
-    name: "John Doe",
+      '"I\'ve seen a significant boost in my marketing strategies thanks to the personalized coaching."',
+    name: "Sara Smith",
     position: "Real Estate Agent",
   },
   {
@@ -179,35 +183,44 @@ export const testimonials = [
     image: pp,
     icon: icon12,
     text:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    name: "Jane Smith",
-    position: "Property Consultant",
+      '"The real-time feedback is invaluable. It\'s like having a mentor in my pocket."',
+    name: "Tom Johnson",
+    position: "Realtor",
   },
   {
     id: 4,
     image: pp,
     icon: icon12,
     text:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    name: "Jane Smith",
-    position: "Property Consultant",
+      '"The interactive scenarios helped me prepare for real-life challenges."',
+    name: "Emily White",
+    position: "Real Estate Broker",
   },
   {
     id: 5,
     image: pp,
     icon: icon12,
     text:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    name: "Jane Smith",
-    position: "Property Consultant",
+      '"Thanks to this AI Coach, I was able to close more deals this year."',
+    name: "David Brown",
+    position: "Real Estate Consultant",
   },
   {
     id: 6,
     image: pp,
     icon: icon12,
     text:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    name: "Jane Smith",
-    position: "Property Consultant",
+      '"I love how convenient it is to access coaching resources at any time!"',
+    name: "Lisa Kim",
+    position: "Broker Associate",
+  },
+  {
+    id: 7,
+    image: pp,
+    icon: icon12,
+    text:
+      '"The real-time feedback is invaluable. It\'s like having a mentor in my pocket."',
+    name: "Mike Rodriguez",
+    position: "Realtor",
   },
 ];

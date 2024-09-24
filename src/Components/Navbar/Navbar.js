@@ -13,35 +13,47 @@ const Navbar = ({ mobNav, setmobNav }) => {
   const [activeLink, setActiveLink] = useState("home");
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      const scrollPosition = window.scrollY;
-      const navbarHeight = 150;
+    const path = router.pathname;
+    if (path === "/faqs") {
+      setActiveLink("projects");
+    } else if (path === "/") {
+      setActiveLink("home");
+    }
+  }, [router.pathname]);
 
-      sections.forEach((section) => {
-        const id = section.id;
-        const offset = section.offsetTop - navbarHeight;
-        const height = section.offsetHeight;
+  //   const handleLinkClick = (id, e) => {
+  //     e.preventDefault();
+  //     const element = document.getElementById(id);
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: "smooth" });
+  //       setActiveLink(id);
+  //     }
+  //   };
 
-        if (scrollPosition >= offset && scrollPosition < offset + height) {
-          setActiveLink(id);
-        }
-      });
-    };
+  //   // Update the handleLinkClick function
+  // const handleLinkClick = (id, href, e) => {
+  //   e.preventDefault(); // Prevent default link behavior
 
-    window.addEventListener("scroll", handleScroll);
+  //   if (id === "contact") {
+  //     // Open the blog link in the same tab
+  //     window.location.href = href;
+  //   } else {
+  //     // Use Next.js router for internal navigation
+  //     router.push(href);
+  //   }
+  // };
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const handleLinkClick = (id, href, e) => {
+    e.preventDefault(); // Prevent default link behavior
 
-  const handleLinkClick = (id, e) => {
-    e.preventDefault();
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    // Check if the href is an external link
+    if (href.startsWith("http")) {
+      // Open the external link in the same tab
+      window.location.href = href;
+    } else {
+      // For internal navigation
       setActiveLink(id);
+      router.push(href);
     }
   };
 
@@ -60,7 +72,7 @@ const Navbar = ({ mobNav, setmobNav }) => {
               key={id}
               className={activeLink === id ? styles.active : ""}
               style={{ cursor: "pointer" }}
-              onClick={(e) => handleLinkClick(id, e)}
+              onClick={(e) => handleLinkClick(id, href, e)}
             >
               <span
                 className={`${styles.link_a} ${

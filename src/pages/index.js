@@ -48,7 +48,7 @@ export default function Home() {
           showGradient={false}
         />
       </div> */}
-      <Faq />
+      {/* <Faq /> */}
       <Footer />
     </Layout>
   );
