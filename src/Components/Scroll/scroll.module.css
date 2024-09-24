@@ -120,6 +120,7 @@
   text-transform: uppercase;
   color: #2f76ff;
 }
+
 @media (max-width: 768px) {
   .box > h1 {
     padding-bottom: 15px;
