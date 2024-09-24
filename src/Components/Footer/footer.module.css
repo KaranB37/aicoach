@@ -64,8 +64,8 @@
   /* height: 100%; */
   /* padding: 56.8667px 0px 42.65px; */
   /* height: 293px; */
-  flex-direction: row;
-  gap: 40px;
+  flex-direction: column;
+  gap: 30px;
   padding: 24px 12px 24px 12px;
   background: linear-gradient(293.27deg, #000362 0.61%, #07323f 99.39%), #19355d;
 }
@@ -231,9 +231,7 @@
   .display {
     display: flex;
   }
-  /* .footer {
-    padding: 55px 72px 50px 72px;
-  } */
+
   .upp > p {
     font-style: normal;
     font-weight: 400;

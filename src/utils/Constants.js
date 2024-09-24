@@ -157,12 +157,19 @@ export const faqData = [
   },
 ];
 
-import pp from "@/Assets/icons/cardpp.svg";
+import pp1 from "@/Assets/pp1.png";
+import pp2 from "@/Assets/pp2.png";
+import pp3 from "@/Assets/pp3.png"; // Assuming pp3.png exists
+import pp4 from "@/Assets/pp4.png"; // Assuming pp4.png exists
+import pp5 from "@/Assets/pp5.png"; // Assuming pp5.png exists
+import pp6 from "@/Assets/pp6.png"; // Assuming pp6.png exists
+import pp7 from "@/Assets/pp7.png"; // Assuming pp7.png exists
 import icon12 from "@/Assets/icons/icon12.svg";
+
 export const testimonials = [
   {
     id: 1,
-    image: pp,
+    image: pp1, // Use pp1 for the first testimonial
     icon: icon12,
     text:
       '"Agent Coach.ai has revolutionized my approach to negotiations. I feel more confident than ever!"',
@@ -171,7 +178,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    image: pp,
+    image: pp2, // Use pp2 for the second testimonial
     icon: icon12,
     text:
       '"I\'ve seen a significant boost in my marketing strategies thanks to the personalized coaching."',
@@ -180,7 +187,7 @@ export const testimonials = [
   },
   {
     id: 3,
-    image: pp,
+    image: pp3, // Use pp3 for the third testimonial
     icon: icon12,
     text:
       '"The real-time feedback is invaluable. It\'s like having a mentor in my pocket."',
@@ -189,7 +196,7 @@ export const testimonials = [
   },
   {
     id: 4,
-    image: pp,
+    image: pp4, // Use pp4 for the fourth testimonial
     icon: icon12,
     text:
       '"The interactive scenarios helped me prepare for real-life challenges."',
@@ -198,7 +205,7 @@ export const testimonials = [
   },
   {
     id: 5,
-    image: pp,
+    image: pp5, // Use pp5 for the fifth testimonial
     icon: icon12,
     text:
       '"Thanks to this AI Coach, I was able to close more deals this year."',
@@ -207,7 +214,7 @@ export const testimonials = [
   },
   {
     id: 6,
-    image: pp,
+    image: pp6, // Use pp6 for the sixth testimonial
     icon: icon12,
     text:
       '"I love how convenient it is to access coaching resources at any time!"',
@@ -216,7 +223,7 @@ export const testimonials = [
   },
   {
     id: 7,
-    image: pp,
+    image: pp7, // Use pp7 for the seventh testimonial
     icon: icon12,
     text:
       '"The real-time feedback is invaluable. It\'s like having a mentor in my pocket."',
