@@ -1,6 +1,6 @@
 /* footer css */
 .main {
-  height: 330px;
+  /* height: 330px; */
   /* padding-top: 100px; */
 }
 .foot_img {
@@ -41,11 +41,23 @@
   font-size: 1rem;
 }
 
+.right > p {
+  font-size: 14px;
+}
+.right {
+  width: 400px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
 .footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   /* height: 100%; */
   /* padding: 56.8667px 0px 42.65px; */
   /* height: 293px; */
-  padding: 40px 72px 50px 72px;
+  padding: 24px 50px 24px 50px;
   background: linear-gradient(293.27deg, #000362 0.61%, #07323f 99.39%), #19355d;
 }
 
@@ -161,7 +173,7 @@
   .footlogo {
     width: 160.98px;
     height: 40px;
-    margin-bottom: 28px;
+    /* margin-bottom: 28px; */
   }
   .main {
     height: auto;
@@ -186,7 +198,7 @@
     gap: 55px;
     display: flex;
     flex-direction: row;
-    padding: 70px 80px;
+    /* padding: 70px 80px; */
   }
 
   .foot_below {
@@ -202,9 +214,9 @@
   .display {
     display: flex;
   }
-  .footer {
+  /* .footer {
     padding: 55px 72px 50px 72px;
-  }
+  } */
   .upp > p {
     font-style: normal;
     font-weight: 400;

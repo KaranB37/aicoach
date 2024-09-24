@@ -119,7 +119,7 @@ export const Hero = ({ video }) => {
               router.push("https://blessed-perch-83.accounts.dev/sign-in")
             }
           >
-            GET STARTED
+            GET STARTED FREE!
           </span>
         </button>
       </div>

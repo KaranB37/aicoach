@@ -2,8 +2,8 @@ export const navLinks = [
   { id: "home", label: "Home", href: "/" },
   { id: "about", label: "About", href: "/#about" },
   { id: "services", label: "Pricing", href: "/#services" },
-  { id: "projects", label: "FAQ's", href: "/#projects" },
-  { id: "contact", label: "Blogs", href: "/#contact" },
+  { id: "projects", label: "FAQ ", href: "/#faq" },
+  { id: "contact", label: "Blog", href: "/#blog" },
 ];
 export const footLinks = [
   { id: "product", label: "Product", href: "/" },
@@ -11,7 +11,7 @@ export const footLinks = [
   { id: "aboutus", label: "About Us", href: "/#aboutus" },
   { id: "services", label: "Services", href: "/#services" },
   { id: "login", label: "Login In/ Sign Up", href: "/#login" },
-  { id: "blogs", label: "Explore Blogs", href: "/#blogs" },
+  { id: "blog", label: "Explore Blogs", href: "/#blogs" },
 ];
 
 export const contacts = [
@@ -20,6 +20,7 @@ export const contacts = [
   { contact: "LinkedIn" },
   { contact: "Facebook" },
 ];
+
 export const footlink = [
   { link: "Legal" },
   { link: "Terms" },

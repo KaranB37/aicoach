@@ -41,17 +41,19 @@ const Footer = () => {
         </div> */}
         <div className={styles.footer}>
           <div className={styles.newsletter}>
-            <div className={styles.upp}>
-              <div className={styles.center}>
-                <Image src={logo} className={styles.footlogo} alt=" " />
-              </div>
-              <p>
-                Discover an Al platform tailored for getting expertise in your
-                Real Estate Business
-              </p>
-            </div>
+            {/* <div className={styles.upp}>
+              <div className={styles.center}> */}
+            <Image src={logo} className={styles.footlogo} alt=" " />
+          </div>
+          <div className={styles.right}>
+            <p>
+              Discover an Al platform tailored for getting expertise in your
+              Real Estate Business
+            </p>
+            {/* </div> */}
             <p>&#169; 2024 Agentcoach.ai. All rights reserved.</p>
-            {/* <form onSubmit={handleSubscribe}>
+          </div>
+          {/* <form onSubmit={handleSubscribe}>
               <input
                 type="text"
                 className={styles.in}
@@ -65,9 +67,9 @@ const Footer = () => {
                 </button>
               </div>
             </form> */}
-          </div>
+          {/* </div> */}
 
-          <div className={styles.foot_below}>
+          {/* <div className={styles.foot_below}>
             <div className={`${styles.navlink} ${styles.display}`}>
               {footLinks.map((e, index) => (
                 <Link
@@ -104,21 +106,15 @@ const Footer = () => {
                 </span>
               ))}
             </div>
-          </div>
-          <div className={styles.iconcon}>
+          </div> */}
+          {/* <div className={styles.iconcon}>
             <div className={styles.icon_cont}>
               <FaTwitter size={22} className={styles.icon} />
               <FaLinkedin size={22} className={styles.icon} />
               <SiFacebook size={22} className={styles.icon} />
-              {/* <Link href={"https://www.instagram.com/riserrealty/"}>
-                <IoLogoInstagram
-                  size={20}
-                  fill="black"
-                  className={styles.icon}
-                />
-              </Link> */}
+             
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
